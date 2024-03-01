@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,46 @@
 </head>
 
 <body>
-    
-    <script>
 
+    <script>
+        /*
+        Faça um Programa que receba quatro notas de um aluno, calcule e imprima a
+média aritmética das notas e a mensagem de aprovado para média superior ou
+igual a 7.0 ou a mensagem de reprovado para média inferior a 7.0.
+a. Bônus: nenhuma nota pode passar de 10.
+        */
+
+        function mediaNotas(nota1, nota2, nota3, nota4) {
+
+            if (nota1 > 10 || nota2 > 10 || nota3 > 10 || nota4 > 10) {
+
+                alert("Nota inválida");
+            }
+
+        }
+
+        const nota1 = parseFloat(prompt("Digite a primeira nota: "));
+
+        const nota2 = parseFloat(prompt("Digite a segunda nota: "));
+
+        const nota3 = parseFloat(prompt("Digite a terceira nota: "));
+
+        const nota4 = parseFloat(prompt("Digite a quarta nota: "));
+
+        const media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        if (media >= 7) {
+
+            alert("Aprovado");
+        }
+
+        else {
+
+            alert("Reprovado");
+        }
+
+        alert(mediaNotas(nota1, nota2, nota3, nota4));
     </script>
 </body>
+
 </html>
