@@ -17,36 +17,28 @@ igual a 7.0 ou a mensagem de reprovado para média inferior a 7.0.
 a. Bônus: nenhuma nota pode passar de 10.
         */
 
-        function mediaNotas(nota1, nota2, nota3, nota4) {
 
-            if (nota1 > 10 || nota2 > 10 || nota3 > 10 || nota4 > 10) {
+        // fazer usando o for  + o do dentro do for
 
-                alert("Nota inválida");
-            }
-
+        let soma = 0;
+for (let i = 1; i <= 4; i++) {
+    let n;
+    do {
+        n = Number(prompt('Digite a nota ' + i + ':'));
+        if(n < 0 || n > 10) {
+            alert('Nota inválida. Por favor, insira uma nota entre 0 e 10.');
         }
+    } while (n < 0 || n > 10);
+    soma += n;
+}
+let media = soma / 4;
+if (media >= 7) {
+    alert('Média: ' + media + '. Aprovado.');
+} else {
+    alert('Média: ' + media + '. Reprovado.');
+}
 
-        const nota1 = Number(prompt("Digite a primeira nota: "));
-
-        const nota2 = Number(prompt("Digite a segunda nota: "));
-
-        const nota3 = Number(prompt("Digite a terceira nota: "));
-
-        const nota4 = Number(prompt("Digite a quarta nota: "));
-
-        const media = (nota1 + nota2 + nota3 + nota4) / 4;
-
-        if (media >= 7) {
-
-            alert("Aprovado");
-        }
-
-        else {
-
-            alert("Reprovado");
-        }
-
-        alert(mediaNotas(nota1, nota2, nota3, nota4));
+        
     </script>
 </body>
 
