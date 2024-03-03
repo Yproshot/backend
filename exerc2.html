@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Escreva um script para ler o número total de eleitores de um município, o
+número de votos brancos, nulos e válidos. Calcular e escrever o percentual que
+cada um representa em relação ao total de eleitores.
+a. Bônus: A soma dos números não pode passar o total de eleitores.
+*/
+
+
+
+    const votosvalidos = 960000;
+
+    const votosbrancos = 10000;
+
+    const votosnulos = 30000;
+
+    
+function votos(votosvalidos, votosbrancos, votosnulos){
+    let total = votosvalidos + votosbrancos + votosnulos;
+    let votosbrancospercent = (votosbrancos / total) * 100;
+    let votosnulospercent = (votosnulos / total) * 100;
+    let votosvalidospercent = (votosvalidos / total) * 100;
+
+    console.log(total, votosbrancospercent, votosnulospercent, votosvalidospercent)
+    if 
+    (total => votosvalidos + votosbrancos + votosnulos){
+        
+    
+    return (
+        (" o total de votos foi " + total + " e o percentual de votos brancos foi " 
+        + votosbrancospercent +"%" + " e o percentual de votos nulos foi " +
+         votosnulospercent + "%"+ " e o percentual de votos validos foi " + votosvalidospercent + "%")
+    )
+} 
+else
+{
+    return(
+        ( "os dados foram inseridos incorretamente")
+    )
+}
+}
+alert(votos(votosvalidos, votosbrancos, votosnulos));
+
+
+    </script>
+</body>
+</html>
