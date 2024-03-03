@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Faça um script que leia duas notas de um aluno, calcule e escreva a média final
+deste aluno. Considerar que a média é ponderada e que o peso das notas é 4 e 6.
+        */
+
+        let nota1 = Number(prompt('Digite a primeira nota:'));
+        let nota2 = Number(prompt('Digite a segunda nota:'));
+
+        function mediaFinal(nota1, nota2){
+            const media = (nota1 * 0.4 + nota2 * 0.6)
+
+            return('A sua media final é: ' + media)
+        }
+        console.log(mediaFinal(nota1, nota2))
+        alert(mediaFinal(nota1, nota2))
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Uma revendedora de carros usados paga a seus funcionários vendedores um
+salário fixo por mês, mais uma comissão também fixa para cada carro vendido e
+mais 5% do valor das vendas por ele efetuadas. Escrever um script que leia o
+número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e
+o valor que ele recebe por carro vendido. Calcule e escreva o salário final do
+vendedor.
+        */
+
+        let salarioFixo = Number(prompt('Qual o valor do salario fixo?'));
+        let carrosVendidos = Number(prompt('Quantos carros foram vendidos?'));
+        let valorCarroVendido = Number(prompt('Qual foi o valor do carro vendido?'));
+        let valorTotalVendas = Number(prompt('Qual foi o valor total das vendas?'));
+
+        function salarioTotal(carrosVendidos, valorTotalVendas, salarioFixo, valorCarroVendido){
+            
+            let salario = salarioFixo + (carrosVendidos * valorCarroVendido) + (valorTotalVendas * 0.05);
+
+            return( 'O salario final do vendedor é de: R$ ' + salario)
+        }
+        console.log(salarioTotal(carrosVendidos, valorTotalVendas, salarioFixo, valorCarroVendido))
+
+        alert(salarioTotal(carrosVendidos, valorTotalVendas, salarioFixo, valorCarroVendido))
+    
+    </script>
+</body>
+</html>

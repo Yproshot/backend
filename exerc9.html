@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Faça um script para somar dois números e multiplicar o resultado pelo primeiro
+número.
+        */
+
+        let num1 = Number(prompt('Digite o primeiro número:'));
+        let num2 = Number(prompt('Digite o segundo número:'));
+
+        function somaMultiplica(num1, num2){
+            let resultado = (num1 + num2) * num1
+
+            return ("O resultado da soma e multiplicação dos dois números é: " + resultado)
+        }
+        console.log(somaMultiplica(num1, num2))
+        alert(somaMultiplica(num1, num2))
+    </script>
+</body>
+</html>
